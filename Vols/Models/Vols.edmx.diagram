@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="914058a7c37548f4b02e0a8f3e1041fe" Name="Diagram1">
+        <EntityTypeShape EntityType="VolsDBModel.job" Width="1.5" PointX="6.875" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="VolsDBModel.jobPics" Width="1.5" PointX="9.375" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VolsDBModel.user" Width="1.5" PointX="2.5" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="VolsDBModel.userAccess" Width="1.5" PointX="0.5" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="VolsDBModel.userJob" Width="1.5" PointX="4.75" PointY="1.75" IsExpanded="true" />
+        <AssociationConnector Association="VolsDBModel.FK_job_user" ManuallyRouted="false" />
+        <AssociationConnector Association="VolsDBModel.FK_jobPics_job" ManuallyRouted="false" />
+        <AssociationConnector Association="VolsDBModel.FK_userJob_job" ManuallyRouted="false" />
+        <AssociationConnector Association="VolsDBModel.FK_user_userAccess" ManuallyRouted="false" />
+        <AssociationConnector Association="VolsDBModel.FK_userJob_user" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

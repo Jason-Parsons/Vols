@@ -1,0 +1,42 @@
+﻿@model Vols.Models.jobPics
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>jobPics</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.before)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.before)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.after)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.after)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.job.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.job.description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.jobID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

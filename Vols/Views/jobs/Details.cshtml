@@ -1,0 +1,82 @@
+﻿@model Vols.Models.job
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>job</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.locationLat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.locationLat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.locationLong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.locationLong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numVolsNeed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numVolsNeed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jobPics.before)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jobPics.before)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.jobID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
