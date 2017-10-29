@@ -210,6 +210,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\ParkCleanUp.jpg" />
+    <Content Include="Images\parkPic.jpg" />
     <Content Include="Models\Vols.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Vols.edmx</DependentUpon>
