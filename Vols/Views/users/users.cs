@@ -8,9 +8,9 @@ using System.Web;
 using System.Web.Mvc;
 using Vols.Models;
 
-namespace Vols.Controllers
+namespace Vols.Views.users
 {
-    public class usersController : Controller
+    public class users : Controller
     {
         private VolsDBEntities db = new VolsDBEntities();
 
@@ -48,7 +48,7 @@ namespace Vols.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "userID,firstName,middleName,lastName,email,phone,userAccess,password")] user user)
+        public ActionResult Create([Bind(Include = "userID,firstName,middleName,lastName,email,phone,userAccess")] user user)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace Vols.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "userID,firstName,middleName,lastName,email,phone,userAccess,password")] user user)
+        public ActionResult Edit([Bind(Include = "userID,firstName,middleName,lastName,email,phone,userAccess")] user user)
         {
             if (ModelState.IsValid)
             {

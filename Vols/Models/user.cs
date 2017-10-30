@@ -28,6 +28,7 @@ namespace Vols.Models
         public string email { get; set; }
         public int phone { get; set; }
         public int userAccess { get; set; }
+        public string password { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<job> job { get; set; }
