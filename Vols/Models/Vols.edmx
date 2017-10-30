@@ -54,6 +54,7 @@
             <PropertyRef Name="userAccess" />
           </Key>
           <Property Name="userAccess" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="accessLevel" Type="int" />
         </EntityType>
         <EntityType Name="userJob">
           <Key>
@@ -271,6 +272,7 @@ warning 6002: The table/view 'VolsDB.sys.database_firewall_rules' does not have 
           </Key>
           <Property Name="userAccess1" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <NavigationProperty Name="user" Relationship="Self.FK_user_userAccess" FromRole="userAccess" ToRole="user" />
+          <Property Name="accessLevel" Type="Int32" />
         </EntityType>
         <EntityType Name="userJob">
           <Key>
@@ -485,6 +487,7 @@ warning 6002: The table/view 'VolsDB.sys.database_firewall_rules' does not have 
           <EntitySetMapping Name="userAccess">
             <EntityTypeMapping TypeName="VolsDBModel.userAccess">
               <MappingFragment StoreEntitySet="userAccess">
+                <ScalarProperty Name="accessLevel" ColumnName="accessLevel" />
                 <ScalarProperty Name="userAccess1" ColumnName="userAccess" />
               </MappingFragment>
             </EntityTypeMapping>
