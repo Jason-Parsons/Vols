@@ -10,9 +10,9 @@ namespace Vols.Models
     {
 
         [Required()]
-        public string Username { get; }
+        public string userName { get; }
         [Required()]
-        public string Password { get; }
+        public string password { get; }
 
     }
 }
